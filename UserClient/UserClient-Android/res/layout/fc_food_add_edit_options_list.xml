@@ -1,0 +1,19 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/fc_background"
+    >
+	
+	 <include layout="@layout/fc_header_horiz"  />
+	
+	
+
+	<ListView
+		 android:layout_width="fill_parent"
+	     android:layout_height="wrap_content"
+	     android:cacheColorHint="#00000000"
+	     android:background="@drawable/fc_list_bg"
+	    android:id="@+id/fc_food_add_edit_options_list_object"/>
+         
+</LinearLayout>

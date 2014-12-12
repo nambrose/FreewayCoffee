@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/fc_signin_scroller"
+android:fillViewport="true"
+
+android:layout_width="fill_parent"
+android:layout_height="fill_parent">
+
+<LinearLayout
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:background="@drawable/fc_background"
+  android:layout_height="fill_parent">
+  
+<include layout="@layout/fc_header_big"/>
+ 
+ <LinearLayout
+  android:orientation="horizontal"
+  android:layout_marginTop="20dp"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content">
+ 
+
+    <TextView 
+    	android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content" 
+    	android:text="@string/fc_go_to_signup"
+    	android:ellipsize ="none"
+    	android:textColor="@color/White"
+    	android:textSize="20dp"
+    	android:id="@+id/fc_signon_go_to_signup_label">
+    	</TextView>
+    	
+    	<Button 
+			android:layout_width="100dp" 
+            android:layout_height="wrap_content"
+            android:id="@+id/fc_buttonSignInGoToSignup"
+            android:onClick="GoToSignup"
+            android:text="@+string/signup" />
+            
+    	
+ </LinearLayout>
+ 
+ <TextView 
+    	android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content" 
+    	android:text="@string/fc_existing_user"
+    	android:layout_marginTop="20dp"
+    	android:layout_marginLeft="50dp"
+  		android:layout_marginRight="50dp"
+  		android:gravity="center_vertical|center_horizontal"
+    	android:layout_gravity="center_horizontal"
+    	android:includeFontPadding="true"
+    	android:ellipsize ="none"
+    	android:textSize="20dp"
+    	android:textColor="@color/White"
+    	android:layout_marginBottom="20dp"
+    	android:background="@drawable/fc_user_banner_rounded">
+    	
+    	</TextView>
+    	
+  <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/fc_list_wrapper"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    >
+    <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/fc_list_bg"
+    >
+     
+ 
+ 
+ 
+ <TableLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="horizontal"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content">
+  
+  <TableRow>
+		<TextView
+		android:layout_height="5dp"
+		 />
+		<TextView
+		android:layout_height="5dp"
+		android:layout_width="200dp" 
+		 />
+		<TextView />
+	</TableRow>
+	
+	
+	<TableRow>
+
+    <TextView 
+    	android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content" 
+    	android:layout_gravity="center_vertical"
+    	android:layout_marginRight="5dp"
+    	android:layout_marginLeft="5dp"
+    	android:text="@string/loginemail"
+    	android:ellipsize ="none"
+    	android:textColor="@color/Black"
+    	android:id="@+id/signonemail">
+    	</TextView>
+    <EditText
+    	android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content"
+    	android:ellipsize="end"
+    	android:singleLine="true"
+    	android:scrollHorizontally="true"
+    	android:selectAllOnFocus="false"
+    	android:textColor="@color/Black"
+    	android:background="@drawable/fc_edit_box_bg_drawable"
+    	android:id="@+id/signonemail_edit">
+    </EditText>
+    
+</TableRow>
+  <TableRow>
+		<TextView
+		android:layout_height="30dp"
+		 />
+		 
+		<TextView
+		android:layout_width="wrap_content" 
+    	android:layout_height="fill_parent"
+    	android:textColor="@color/Red"
+    	android:gravity="top"
+    	android:id="@+id/signonemail_error">
+		
+		</TextView>
+	</TableRow>
+
+<TableRow>
+    
+    <TextView 
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:text="@string/password"
+    	android:layout_gravity="center_vertical"
+    	android:layout_marginRight="5dp"
+    	android:layout_marginLeft="5dp"
+    	android:ellipsize ="none"
+    	android:textColor="@color/Black"
+    	android:id="@+id/signon_password">
+    </TextView>
+    
+    <EditText
+    	android:layout_width="200dp" 
+    	android:layout_height="wrap_content" 
+    	android:inputType="textPassword"
+    	android:ellipsize ="end"
+    	android:singleLine="true"
+    	android:password="true"
+    	android:scrollHorizontally="true"
+    	android:selectAllOnFocus="true"
+    	android:textColor="@color/Black"
+    	android:background="@drawable/fc_edit_box_bg_drawable"
+    	android:id="@+id/signonpassword_edit">
+    </EditText>
+    
+</TableRow>
+<TableRow>
+		
+		<TextView
+		android:layout_height="30dp"
+		 />
+		<TextView
+		android:layout_width="wrap_content" 
+    	android:layout_height="fill_parent"
+    	android:textColor="@color/Red"
+    	android:gravity="top"
+   	android:id="@+id/signonpassword_error">
+		</TextView>
+		
+		
+	</TableRow>
+	
+
+  <TableRow>
+		<TextView
+		android:layout_height="20dp"
+		 />
+		<TextView />
+		<TextView
+		android:layout_height="20dp"
+		 />
+		<TextView />
+	</TableRow>
+ </TableLayout>
+	
+            </LinearLayout>
+</LinearLayout>
+<Button 
+			android:layout_width="100dp" 
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonSignIn"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:onClick="AttemptSignon"
+            android:text="@+string/signin" />
+</LinearLayout>
+
+</ScrollView>

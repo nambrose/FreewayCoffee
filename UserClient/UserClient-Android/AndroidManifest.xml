@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.freewaycoffee.client"
+      android:versionCode="7" android:versionName="1.0.3">
+    <uses-sdk android:minSdkVersion="7" android:targetSdkVersion="11"/>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+    <application android:theme="@android:style/Theme.NoTitleBar" android:name="FreewayCoffeeApp" android:icon="@drawable/fc_icon" android:label="@string/fc_coffee">
+        <activity android:name=".FreewayCoffeeClientActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation" android:label="@string/fc_coffee">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            
+        </activity>
+  		<activity android:name=".FreewayCoffeeItemListView"
+  				android:screenOrientation="portrait"
+  				android:configChanges="keyboardHidden|orientation">
+  			<intent-filter>
+  				<category android:name="android.intent.category.DEFAULT"></category>
+  			</intent-filter>
+            
+        </activity>
+        
+        <activity android:name=".FreewayCoffeeSignupActivity"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"></category>
+            </intent-filter>
+            
+        
+        </activity>
+        <activity android:name=".FreewayCoffeeSignonActivity"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"></category>
+            </intent-filter>
+      
+        </activity>
+      
+      <activity android:name=".FreewayCoffeeDrinkPickerActivity"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"></category>
+            </intent-filter>
+      
+        </activity>
+        
+        <activity android:name=".FreewayCoffeeDrinkAddActivity"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"></category>
+            </intent-filter>
+      
+        </activity>
+        
+        <activity android:name=".FreewayCoffeeDrinkAddEditActivity"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"></category>
+            </intent-filter>
+      
+        </activity>
+        <activity android:name=".FreewayCoffeeDrinkOptionPickerActivity"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"></category>
+            </intent-filter>
+      
+        </activity>
+        
+        <activity android:name=".FreewayCoffeeTimeToLocationActivity"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"></category>
+            </intent-filter>
+      
+        </activity>
+        
+        <activity android:name=".FreewayCoffeeCreditCardActivity"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"></category>
+            </intent-filter>
+      
+        </activity>
+        <activity android:name=".FreewayCoffeeUserTagActivity"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"></category>
+            </intent-filter>
+      
+        </activity>
+        <activity android:name=".FreewayCoffeeOrderResultActivity"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"></category>
+            </intent-filter>
+      
+        </activity>
+        <activity android:name=".FreewayCoffeeCarOptionActivity"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"></category>
+            </intent-filter>
+      
+        </activity>
+        <activity android:name=".FreewayCoffeeLicensePlateActivity"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"></category>
+            </intent-filter>
+      
+        </activity>
+        <activity android:name=".FreewayCoffeeDrinkOptionExtraActivity"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"></category>
+            </intent-filter>
+      
+        </activity>
+        
+        
+        <activity android:name=".FreewayCoffeeLocationDetailActivity"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"></category>
+            </intent-filter>
+            </activity>
+            <activity android:name=".FreewayCoffeeFoodAddActivity"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"></category>
+            </intent-filter>
+            </activity>
+            <activity android:name=".FreewayCoffeeFoodAddEditActivity"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"></category>
+            </intent-filter>
+            </activity>
+            <activity android:name=".FreewayCoffeeFoodAddEditOptionsActivity"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"></category>
+            </intent-filter>
+            </activity>
+            <activity android:name=".FreewayCoffeeFoodOptionValuePickerActivity"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"></category>
+            </intent-filter>
+            </activity>
+            
+            
+            
+            <activity android:name=".FreewayCoffeeAboutDialogActivity"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation"
+                  android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"></category>
+            </intent-filter> 
+        	</activity>
+        	<activity android:name=".FreewayCoffeeOrderResultErrorActivity"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation"
+                  android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"></category>
+            </intent-filter> 
+        	</activity>
+        	
+        	
+        	<activity android:name=".FreewayCoffeeFeedbackActivity"
+                  android:label="Feedback"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation"
+                  android:theme="@style/FCOpaqueActivity"
+                  >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"></category>
+            </intent-filter> 
+        	</activity>
+        	<activity android:name=".FreewayCoffeeReportsActivity"
+                  android:label="Reports"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation"
+                  android:theme="@style/FCOpaqueActivity"
+                  >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"></category>
+            </intent-filter> 
+        	</activity>
+        	
+        	
+    </application>
+</manifest>

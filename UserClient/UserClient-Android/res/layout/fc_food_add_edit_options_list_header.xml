@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+    
+	<TableLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="horizontal"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content">
+  <TableRow>
+		<TextView
+		android:layout_height="20dp"
+		 />
+		<TextView />
+	</TableRow>
+  <TableRow>
+  <TextView 
+    	android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content" 
+    	android:text="@string/fc_food_type"
+    	android:ellipsize ="none"
+    	android:textColor="@color/Black"
+    	android:textSize="20dp"
+    	>
+    	</TextView>
+    	<TextView 
+    	android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content" 
+    	android:ellipsize ="none"
+    	android:textColor="@color/Black"
+    	android:id="@+id/fc_add_edit_food_type"
+    	android:textSize="20dp"
+    	>
+    	</TextView>
+  </TableRow>
+  <TableRow>
+		<TextView
+		android:layout_height="20dp"
+		 />
+		<TextView />
+	</TableRow>
+ 
+  </TableLayout>
+  
+  
+</LinearLayout>

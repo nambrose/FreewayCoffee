@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/c_order_response_scroller"
+android:fillViewport="true"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent">
+
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:background="@drawable/fc_background"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content">
+    
+    <include layout="@layout/fc_header_horiz"/>
+    
+    <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/fc_list_wrapper"
+    >
+    
+        <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/fc_list_bg"
+    >
+   
+	
+	<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:textSize="16dip"
+    android:id="@+id/fc_order_response_text"
+  	android:drawablePadding="4dp"
+  	android:textColor="@color/Black"
+  	
+	/>
+	
+	<CheckBox android:id="@+id/fc_order_response_walkup"
+            android:layout_width="wrap_content" 
+            android:layout_height="46dp"
+            android:textColor="@color/Black"
+            android:textSize="32dip"
+            android:gravity="center"
+            android:layout_marginLeft="5dp"
+    		android:layout_marginTop="3dp"
+            android:text="Walkup Order"
+            android:button="@drawable/fc_checkbox"
+         /> 
+         
+	<LinearLayout 
+	android:orientation="horizontal"
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/fc_order_response_buttons"
+    
+    >
+
+	    <Button android:layout_width="wrap_content" android:id="@+id/fc_order_response_feedback_button" 
+    
+    android:onClick="DoButtonFeedback" android:textSize="24sp" android:layout_height="fill_parent" android:text="Feedback" 
+    android:background="@drawable/fc_feedback_button_bg" android:layout_marginRight="3dp"
+    
+    android:layout_weight="0.5"
+    ></Button>
+	    
+<Button 
+			
+			android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/fc_order_response_button"
+            android:onClick="DoAction"
+            android:textColor="@color/White"
+            android:textStyle="bold"
+            android:layout_weight="0.5"
+            android:textSize="24sp"
+            android:background="@drawable/fc_order_finished_but_bg"
+            
+            
+             />
+  
+  </LinearLayout>
+	
+</LinearLayout>
+</LinearLayout>
+</LinearLayout>
+</ScrollView>

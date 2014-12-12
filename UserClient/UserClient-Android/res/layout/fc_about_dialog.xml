@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/fc_list_bg"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+  
+<ScrollView 
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/fc_about_scroller"
+android:layout_weight="1"
+android:layout_width="fill_parent"
+android:layout_height="0dip"
+>
+
+	<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:textSize="16dip"
+    android:id="@+id/fc_about_text"
+  	android:drawablePadding="4dp"
+  	android:textColor="@color/Black"
+  	android:background="@color/White"
+  	
+	/>
+	
+</ScrollView>
+
+<LinearLayout 
+	android:orientation="horizontal"
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/fc_about_buttons"
+    android:background="@drawable/fc_list_bg"
+    >
+<Button 
+			android:layout_weight="0.5" 
+			android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:id="@+id/fc_about_back"
+            android:onClick="DoBack"
+            android:text="@string/fc_back" 
+            
+             />
+
+
+<Button 
+			android:layout_weight="0.5"
+			android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fc_about_website_button"
+            android:onClick="DoShowSite"
+            android:text="@string/fc_website"
+            
+             />
+  
+  </LinearLayout>
+
+
+</LinearLayout>

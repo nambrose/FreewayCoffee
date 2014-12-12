@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="horizontal"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+  <Button android:layout_width="wrap_content" android:id="@+id/item_list_feedback" 
+    
+    android:onClick="DoButtonFeedback" android:textSize="24sp" android:layout_height="fill_parent" android:text="Feedback" 
+    android:layout_marginTop="3dp" android:layout_marginBottom="3dp" android:layout_marginRight="3dp"
+    android:layout_weight="0.5"
+    android:background="@drawable/fc_feedback_button_bg"
+    ></Button>
+    <Button android:layout_width="wrap_content" android:id="@+id/itemlist_make_order" 
+    android:layout_marginTop="3dp" android:layout_marginBottom="3dp"
+    android:onClick="MakeOrder" android:textSize="24sp" android:layout_height="wrap_content" android:text="Order Now" 
+    android:textColor="@color/White" 
+    android:background="@drawable/fc_order_button_bg"
+    android:layout_weight="0.5"
+    ></Button>
+
+</LinearLayout>

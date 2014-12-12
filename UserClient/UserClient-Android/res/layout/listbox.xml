@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/lineItem"
+				xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center_vertical">
+	  
+	  <ImageView android:layout_width="55dip"
+	  android:layout_height="fill_parent"
+	  android:id="@+id/fc_list_img"
+	   android:layout_centerVertical="true"
+		android:layout_alignParentLeft="true"
+	  />
+	  <TextView android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	  android:id="@+id/fc_list_item_text"
+	  android:textSize="20dip"
+	  android:textColor="@color/Black"	
+      android:layout_toRightOf="@+id/fc_list_img"
+	  android:layout_toLeftOf="@+id/fc_item_list_cost"/>
+	   
+	   <TextView android:id="@+id/fc_item_list_cost"
+						  android:layout_height="wrap_content"
+						  android:layout_width="wrap_content"
+						  android:layout_marginLeft="4dip" 
+						  android:textSize="10sp"
+						  android:textColor="@color/Black"			  
+						  android:layout_toLeftOf="@+id/fc_item_list_row_remove_button"
+					      android:layout_alignParentBottom="true"></TextView>
+	   
+	   <TextView android:id="@+id/fc_item_list_small_text"
+						  android:layout_height="wrap_content"
+						  android:layout_marginLeft="10dip" 
+						  android:textSize="10sp"
+						  android:textColor="@color/Black" android:layout_width="wrap_content"
+						  android:layout_toRightOf="@+id/fc_list_img"
+						  android:layout_toLeftOf="@+id/fc_item_list_cost"
+						  android:layout_below="@+id/fc_list_item_text"
+						  
+				></TextView>
+	  
+	  <com.freewaycoffee.client.FreewayCoffeeNoParentPressImageButtonView
+	   android:id="@+id/fc_item_list_row_remove_button"
+				android:layout_height="48dp" android:layout_width="48dp"
+				android:layout_alignParentRight="true"
+				android:layout_centerVertical="true"  android:src="@+drawable/fc_remove"
+				android:background="#00000000"
+				/>
+</RelativeLayout>

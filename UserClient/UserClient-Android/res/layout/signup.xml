@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/fc_signup_scroller"
+android:fillViewport="true"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent">
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/fc_background"
+    android:gravity="left"
+    android:orientation="vertical" >
+
+<include layout="@layout/fc_header_big"/>
+ 
+<TextView 
+    	android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content" 
+    	android:text="@string/signup"
+    	android:layout_marginTop="20dp"
+    	android:layout_marginLeft="50dp"
+  		android:layout_marginRight="50dp"
+  		android:layout_marginBottom="20dp"
+  		android:textSize="20dip"
+  		android:gravity="center_vertical|center_horizontal"
+    	android:layout_gravity="center_horizontal"
+    	android:includeFontPadding="true"
+    	android:ellipsize ="none"
+    	android:textColor="@color/White"
+    	android:background="@drawable/fc_user_banner_rounded">
+    	
+    	</TextView>
+  
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/fc_list_wrapper"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fc_list_bg"
+        android:orientation="vertical" >
+    
+ <TableLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="horizontal"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content">
+  
+  <TableRow>
+		<TextView
+		android:layout_height="20dp"
+		 />
+		<TextView />
+		<TextView
+		android:layout_height="20dp"
+		 />
+		<TextView />
+	</TableRow>
+	
+  <TableRow>
+  
+  
+	
+
+    <TextView 
+    	android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content" 
+    	android:text="@string/signupemail"
+    	android:ellipsize ="none"
+    	android:textColor="@color/Black"
+    	
+    	android:id="@+id/signupemail">
+    	</TextView>
+    <EditText
+    	android:layout_width="180dp" 
+    	android:layout_height="wrap_content"
+    	android:ellipsize="end"
+    	android:singleLine="true"
+    	android:scrollHorizontally="true"
+    	android:selectAllOnFocus="false"
+    	android:textColor="@color/Black"
+    	android:background="@drawable/fc_edit_box_bg_drawable"
+    	
+    	android:id="@+id/signupemail_edit">
+    </EditText>
+    
+</TableRow>
+  <TableRow>
+		<TextView
+		android:layout_height="20dp"
+		 />
+		<TextView
+		android:layout_width="wrap_content" 
+    	android:layout_height="fill_parent"
+    	android:textColor="@color/Red"
+    	android:gravity="top"   	
+    	
+    	android:id="@+id/signupemail_error">
+		</TextView>
+	</TableRow>
+
+<TableRow>
+  
+    <TextView 
+    	android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content" 
+    	android:text="@string/signupnickname"
+    	android:ellipsize ="none"
+    	android:textColor="@color/Black"
+    	
+    	android:id="@+id/signupnickname">
+    	</TextView>
+    <EditText
+    	android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content"
+    	android:ellipsize="end"
+    	android:singleLine="true"
+    	android:scrollHorizontally="true"
+    	android:selectAllOnFocus="false"
+    	android:textColor="@color/Black"
+    	android:background="@drawable/fc_edit_box_bg_drawable"
+    	
+    	android:id="@+id/signupnickname_edit">
+    </EditText>
+    
+</TableRow>
+  <TableRow>
+		<TextView
+		android:layout_height="20dp"
+		 />
+		<TextView
+		android:layout_width="wrap_content" 
+    	android:layout_height="fill_parent"
+    	android:textColor="@color/Red"
+    	android:gravity="top"   	
+    	
+    	android:id="@+id/signupnickname_error">
+		</TextView>
+	</TableRow>
+	
+	
+<TableRow>
+    
+    <TextView 
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:text="@string/password"
+    	android:ellipsize ="none"
+    	android:textColor="@color/Black"
+    	
+    	android:id="@+id/signup_password">
+    </TextView>
+    
+    <EditText
+    	android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content" 
+    	android:inputType="textPassword"
+    	android:ellipsize ="end"
+    	android:singleLine="true"
+    	android:password="true"
+    	android:scrollHorizontally="true"
+    	android:selectAllOnFocus="true"
+    	android:textColor="@color/Black"
+    	android:background="@drawable/fc_edit_box_bg_drawable"
+    	
+    	android:id="@+id/signuppassword_edit">
+    </EditText>
+    
+</TableRow>
+
+<TableRow>
+		<TextView
+		android:layout_height="20dp"
+		 />
+		
+		<TextView
+		android:layout_width="wrap_content" 
+    	android:layout_height="fill_parent"
+    	android:textColor="@color/Red"
+    	android:gravity="top"   	
+    	
+    	android:id="@+id/signuppassword_error">
+		</TextView>
+	</TableRow>
+
+
+<TableRow>
+    
+    <TextView 
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:text="@string/password_again"
+    	android:ellipsize ="none"
+    	android:textColor="@color/Black"
+    
+    	android:id="@+id/signup_password_again">
+    </TextView>
+    
+    <EditText
+    	android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content" 
+    	android:inputType="textPassword"
+    	android:ellipsize ="end"
+    	android:singleLine="true"
+    	android:password="true"
+    	android:scrollHorizontally="true"
+    	android:selectAllOnFocus="true"
+    	android:textColor="@color/Black"
+    	android:background="@drawable/fc_edit_box_bg_drawable"
+    	
+    	android:id="@+id/signuppassword_again_edit">
+    </EditText>
+    
+</TableRow>
+
+<TableRow>
+		<TextView
+		android:layout_height="20dp"
+		 />
+		<TextView
+		android:layout_width="wrap_content" 
+    	android:layout_height="fill_parent"
+    	android:textColor="@color/Red"
+    	android:gravity="top"   	
+    	
+    	android:id="@+id/signuppasswordagain_error">
+		</TextView>
+	</TableRow>
+	
+	
+  <TableRow>
+		<TextView
+		android:layout_height="20dp"
+		 />
+		 <TextView
+		android:layout_height="20dp"
+		 />
+		<TextView />
+	</TableRow>
+	<TableRow>
+	<Button 
+			android:layout_width="30dp" 
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonSignup"
+            android:layout_span="2"
+            android:layout_gravity="center"
+            android:onClick="AttemptSignup"
+            android:text="Sign Up" />
+	</TableRow>
+ </TableLayout>
+ 
+ </LinearLayout>
+ </LinearLayout>
+ 
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="20dp"
+      android:orientation="horizontal" >
+
+    <TextView 
+    	android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content" 
+    	android:text="@string/fc_go_to_signon"
+    	android:ellipsize ="none"
+    	android:layout_gravity="center_vertical"
+    	android:textColor="@color/White"
+    	android:id="@+id/fc_signup_go_to_signon_label">
+    	</TextView>
+    	
+    	<Button 
+			android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:id="@+id/fc_buttonSignInGoToSignon"
+            android:onClick="GoToSignon"
+            android:text="@+string/signin" />
+            
+    	
+ </LinearLayout>
+ 
+</LinearLayout>
+</ScrollView>

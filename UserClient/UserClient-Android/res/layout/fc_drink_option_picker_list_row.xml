@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:id="@+id/lineItem"
+				xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center_vertical">
+
+   	  <com.freewaycoffee.client.FreewayCoffeeNoParentPressImageButtonView
+		   android:id="@+id/fc_drink_option_picker_row_minus_but"
+				android:layout_height="36dp" android:layout_width="36dp"
+				android:layout_alignParentLeft="true"
+				android:layout_centerVertical="true"  android:src="@+drawable/fc_remove"
+				android:background="#00000000"
+				/>
+     
+				<TextView android:id="@+id/fc_drink_option_picker_row_text"
+						  android:layout_height="wrap_content"
+						  android:layout_marginLeft="0dip"
+						  android:textSize="20sp"
+						  android:textColor="#ff000000" android:layout_width="wrap_content"
+						  android:layout_toRightOf="@+id/fc_drink_option_picker_row_minus_but"
+						  android:layout_toLeftOf="@+id/fc_option_picker_row_cost"
+				></TextView>
+				<TextView android:id="@+id/fc_drink_option_picker_row_small_text"
+						  android:layout_height="wrap_content"
+						  android:layout_marginLeft="0dip" 
+						  android:textSize="10sp"
+						  android:textColor="@color/Black" android:layout_width="wrap_content"
+						  android:layout_toRightOf="@+id/fc_drink_option_picker_row_minus_but"
+						  android:layout_toLeftOf="@+id/fc_option_picker_row_cost"
+						  android:layout_below="@+id/fc_drink_option_picker_row_text"
+						  
+				></TextView>
+				
+				<TextView android:id="@+id/fc_option_picker_row_cost"
+						  android:layout_height="wrap_content"
+						  android:layout_width="wrap_content"
+						  android:layout_marginLeft="0dip"
+						  android:layout_marginRight="5dip" 
+						  android:textSize="10sp"
+						  android:textColor="@color/Black"			  
+						  android:layout_toLeftOf="@+id/fc_drink_option_picker_row_plus_but"
+				          android:layout_alignParentBottom="true"
+				          ></TextView>
+			<com.freewaycoffee.client.FreewayCoffeeNoParentPressImageButtonView
+		   		android:id="@+id/fc_drink_option_picker_row_plus_but"
+				android:layout_height="36dp" android:layout_width="36dp"
+				android:layout_alignParentRight="true"
+				android:layout_centerVertical="true"  android:src="@+drawable/fc_add_list"
+				android:background="#00000000"
+				/>
+ 
+ 
+</RelativeLayout>

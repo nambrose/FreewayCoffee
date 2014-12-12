@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    
+    
+    android:orientation="vertical" >
+    
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/fc_om_arrived_list_wrapper"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:orientation="vertical" >
+
+    <TextView
+		android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content"
+    	android:textColor="@color/Black"
+    	android:includeFontPadding="true"
+    	android:textSize="20dp"
+    	android:gravity="center"
+    	android:background="@drawable/fc_om_arriving_title_bg"
+    	android:id="@+id/fc_om_order_arriving_title">
+
+        </TextView>
+        
+         <TextView
+		android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content"
+    	android:textColor="@color/Black"
+    	android:includeFontPadding="true"
+    	android:textSize="20dp"
+    	android:gravity="center"
+    	android:background="@drawable/fc_om_background_border_thin_black"
+    	android:id="@+id/fc_om_order_arriving_car">
+
+        </TextView>
+    
+         <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="35dp"
+    android:orientation="horizontal" >
+    <TextView
+		android:layout_width="fill_parent" 
+    	android:layout_height="fill_parent"
+    	android:textColor="@color/Black"
+    	android:textSize="20dp"
+    	android:includeFontPadding="true"
+    	android:gravity="center"
+    	android:layout_weight="1"
+    	android:background="@drawable/fc_om_background_border_thin_black"
+    	android:id="@+id/fc_om_order_arriving_item_count">
+
+        </TextView>
+        <TextView
+		android:layout_width="fill_parent" 
+    	android:layout_height="fill_parent"
+    	android:textColor="@color/Black"
+    	android:includeFontPadding="true"
+    	android:textSize="20dp"
+    	android:gravity="center"
+    	android:layout_weight="1"
+    	android:background="@drawable/fc_om_background_border_thin_black"
+    	android:id="@+id/fc_om_order_arriving_item_cost">
+
+        </TextView>
+             
+        <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/fc_om_background_border_thin_black"
+    android:layout_weight="1"
+    android:gravity="center" 
+    android:orientation="vertical" >
+        <com.freeewaycoffee.ordermanager2.FCOrderManagerNoParentPressButton
+            
+            android:id="@+id/fc_om_order_arriving_actions"
+	  			 android:text="Delivered"
+				android:layout_height="wrap_content" android:layout_width="wrap_content"
+				android:padding="1dp"
+				android:textSize="15dp"
+				android:layout_marginTop="3dp"
+				android:layout_marginBottom="3dp"
+				android:textColor="@color/White"
+				
+				android:layout_gravity="center"  android:background="@drawable/fc_om_deliver_but_bg">
+        
+            
+            </com.freeewaycoffee.ordermanager2.FCOrderManagerNoParentPressButton>
+            </LinearLayout>
+            
+         </LinearLayout>
+        
+</LinearLayout>
+</LinearLayout>

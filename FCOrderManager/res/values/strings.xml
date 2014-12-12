@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">OrderMan</string>
+    <string name="fc_om_signin">Sign On</string>
+    <string name="fc_om_loginemail">Email</string>
+    <string name="fc_om_password">Password</string>
+    <string name="fc_om_schema_error">Schema Error</string>
+    <string name="fc_om_ok">OK</string>
+    <string name="fc_om_signon_error">Signon Error</string>
+    <string name="fc_om_signon_not_successful">Signon Was Not Successful</string>
+    <string name="fc_om_network_error">Network Error</string>
+    <string name="fc_om_about">About</string>
+    <string name="fc_om_contact_us">Contact</string>
+    <string name="fc_om_signing_you_in">Signing You On</string>
+    <string name="fc_om_error_email_cannot_be_empty">Email Address Cannot Be Empty.</string>
+    <string name="fc_om_error_password_cannot_be_empty">Password Cannot Be Empty</string>
+    <string name="fc_om_unknown_release">Unknown Release (Please report this error)</string>
+    <string name="fc_om_version_error_occurred">A Version Error Occurred.</string>
+    <string name="fc_om_version_you_have">Version You Have: </string>
+    <string name="fc_om_please_download_version">Please Download Version: </string>
+    <string name="fc_om_order_id">Order ID</string>
+    <string name="fc_om_received">Received</string>
+    <string name="fc_om_needed">Needed</string>
+    <string name="fc_om_name">Name</string>
+    <string name="fc_om_items">Items</string>
+    <string name="fc_om_total_cost">Total</string>
+    <string name="fc_om_disposition">Disposition</string>
+    <string name="fc_om_here">Here</string>
+
+</resources>

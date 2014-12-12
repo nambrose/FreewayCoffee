@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+
+    <LinearLayout
+  android:orientation="horizontal"
+  android:layout_width="fill_parent"
+  android:background="@color/Black"
+  android:layout_height="wrap_content">
+  
+        
+        
+        <TextView 
+            android:id="@+id/fc_om_main_time_date"
+    	android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content"
+    	android:layout_marginTop="5dp"
+    	android:layout_marginLeft="5dp"
+    	android:layout_marginRight="5dp"
+    	android:layout_marginBottom="5dp" 
+    	
+    	android:ellipsize ="none"
+    	android:layout_gravity="right"
+    	android:gravity="center_vertical"
+    	android:textColor="@color/White"
+    	>
+    	</TextView>
+    	
+  </LinearLayout>
+<LinearLayout
+  android:orientation="horizontal"
+  android:layout_width="fill_parent"
+  android:background="@color/Black"
+  android:layout_height="fill_parent">
+  
+    <LinearLayout
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_marginLeft="5dp"
+  android:layout_marginRight="10dp"
+  android:layout_height="fill_parent"
+  android:background="@drawable/fc_om_list_wrapper"
+  android:id="@+id/fc_om_main_incoming_orders_vert">
+  
+        <LinearLayout
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:background="@drawable/fc_om_list_bg"
+  android:layout_height="fill_parent">
+  
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                >
+  <CheckBox android:id="@+id/fc_om_main_hide_completed_orders_check"
+            android:layout_width="wrap_content" 
+            android:layout_height="44dp"
+            android:textColor="@color/Black"
+            android:textSize="12sp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:paddingLeft="50sp"
+    		android:layout_marginTop="5dp"
+    		android:button="@drawable/fc_om_check_box"
+            android:text="Hide Completed Orders"
+         /> 
+         
+  <CheckBox android:id="@+id/fc_om_main_vibrate_on_orders_check"
+            android:layout_width="wrap_content" 
+            android:layout_height="44dp"
+            android:textColor="@color/Black"
+            android:textSize="12sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:paddingLeft="50sp"
+    		android:layout_toRightOf="@+id/fc_om_main_hide_completed_orders_check"
+    		android:button="@drawable/fc_om_check_box"
+            android:text="Vibrate On Order Changes"
+         /> 
+         
+  <CheckBox android:id="@+id/fc_om_main_sound_on_orders_check"
+            android:layout_width="wrap_content" 
+            android:layout_height="44dp"
+            android:textColor="@color/Black"
+            android:textSize="12sp"
+            android:layout_toRightOf="@+id/fc_om_main_vibrate_on_orders_check"
+            android:layout_marginLeft="5dp"
+            android:paddingLeft="50sp"
+    		android:layout_marginTop="5dp"
+    		android:button="@drawable/fc_om_check_box"
+            android:text="Sound On Order Changes"
+         /> 
+   
+  <TextView 
+            android:id="@+id/fc_om_store_open_mode_text"
+    	android:layout_width="wrap_content" 
+    	android:layout_height="44dp"
+    	android:gravity="center_vertical"
+    	android:layout_marginLeft="20dp"
+    	android:layout_marginRight="5dp"
+    	android:layout_marginBottom="5dp" 
+    	android:layout_marginTop="5dp"
+    	android:layout_toRightOf="@+id/fc_om_main_sound_on_orders_check"
+    	android:text="Store Open Mode"
+    	android:ellipsize ="none"
+    	
+    	
+    	android:textColor="@color/Black"
+    	>
+    	</TextView>
+    	
+  	<Button
+	  			 android:id="@+id/fc_om_store_open_mode"
+	  			 android:layout_width="100dp"
+				android:layout_height="wrap_content"
+				android:layout_toRightOf="@+id/fc_om_store_open_mode_text"
+				android:textSize="12sp"
+					android:layout_marginLeft="3dp"
+					android:padding="5dp"
+				android:textColor="@color/White" 
+				android:layout_marginBottom="5dp" 
+    	android:layout_marginTop="5dp"
+				android:layout_centerVertical="true" />
+  
+  <CheckBox android:id="@+id/fc_om_main_hide_test_orders_check"
+            android:layout_width="wrap_content" 
+            android:layout_height="44dp"
+            android:paddingLeft="50sp"
+            android:textColor="@color/Black"
+            android:textSize="12sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+    		android:layout_marginTop="5dp"
+    		android:button="@drawable/fc_om_check_box"
+            android:text="Hide Test Orders"
+         /> 
+       </RelativeLayout>
+         
+        <TextView 
+            android:id="@+id/fc_om_main_incoming_orders_text"
+    	android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content"
+    	android:layout_marginTop="5dp"
+    	android:layout_marginLeft="5dp"
+    	android:layout_marginRight="5dp"
+    	android:layout_marginBottom="5dp" 
+    	android:text="Incoming Orders"
+    	android:ellipsize ="none"
+    	android:gravity="center"
+    	android:textColor="@color/White"
+    	android:background="@drawable/fc_om_user_banner_rounded">
+    	</TextView>
+        
+        <ExpandableListView
+            android:layout_width="fill_parent" android:layout_height="fill_parent"
+            android:childDivider="#00000000" android:cacheColorHint="#00000000"
+            android:id="@+id/fc_om_order_main_list" android:groupIndicator="@null">
+		</ExpandableListView>
+
+	</LinearLayout>
+	</LinearLayout>
+	    
+     
+    </LinearLayout>
+
+ </LinearLayout>

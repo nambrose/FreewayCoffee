@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/fc_signin_scroller"
+android:fillViewport="true"
+
+android:layout_width="fill_parent"
+android:layout_height="fill_parent">
+
+<LinearLayout
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+  
+<include layout="@layout/fc_om_header_center_main"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content" />
+ 
+ 
+ 
+ <TextView 
+    	android:layout_width="460dp" 
+    	android:layout_height="wrap_content" 
+    	android:text="@string/fc_om_signin"
+    	android:layout_marginTop="20dp"
+    	android:layout_marginLeft="50dp"
+  		android:layout_marginRight="50dp"
+  		android:gravity="center_vertical|center_horizontal"
+    	android:layout_gravity="center_horizontal"
+    	android:includeFontPadding="true"
+    	android:ellipsize ="none"
+    	android:textSize="20dip"
+    	android:textColor="@color/White"
+    	android:layout_marginBottom="20dp"
+    	android:background="@drawable/fc_om_user_banner_rounded">
+    	
+    	</TextView>
+    	
+  <LinearLayout
+      android:layout_width="460dp"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android_layout_gravity="center"
+      android:background="@drawable/fc_om_list_wrapper"
+      android:orientation="vertical" >
+
+    <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/fc_om_list_bg"
+    >
+     
+ 
+ 
+ 
+ <TableLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="horizontal"
+  android_layout_gravity="center"
+  android:layout_width="560dp"
+  android:layout_height="wrap_content">
+  
+  <TableRow>
+		<TextView
+		android:layout_width="80dp" 
+		android:layout_height="30dp"
+		android:layout_marginLeft="5dp" 
+		android:layout_marginRight="5dp" 
+		 />
+		<TextView
+		android:layout_height="30dp"
+		android:layout_width="340dp"
+		android:layout_marginRight="10dp" 
+		 />
+		<TextView />
+	</TableRow>
+	
+	
+	<TableRow>
+
+    <TextView 
+    	android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content"
+    	android:layout_marginLeft="5dp"
+    	android:layout_marginRight="5dp" 
+    	android:text="@string/fc_om_loginemail"
+    	android:ellipsize ="none"
+    	android:textColor="@color/Black"
+    	android:id="@+id/fc_om_signon_email_text">
+    	</TextView>
+    <EditText
+    	android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content"
+    	android:ellipsize="end"
+    	android:lines="1"
+    	android:scrollHorizontally="true"
+    	android:selectAllOnFocus="false"
+    	android:textColor="@color/Black"
+    	android:background="@drawable/fc_om_edit_field_bg"
+    	android:id="@+id/fc_om_signon_email_edit">
+    </EditText>
+    
+</TableRow>
+  <TableRow>
+		<TextView
+		android:layout_height="30dp"
+		 />
+		 
+		<TextView
+		android:layout_width="wrap_content" 
+    	android:layout_height="fill_parent"
+    	android:textColor="@color/Red"
+    	android:gravity="top"
+    	android:id="@+id/fc_om_signon_email_error">
+		
+		</TextView>
+	</TableRow>
+
+<TableRow>
+    
+    <TextView 
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_marginLeft="5dp" 
+    	android:layout_marginRight="5dp" 
+    	android:text="@string/fc_om_password"
+    	android:ellipsize ="none"
+    	android:textColor="@color/Black"
+    	android:id="@+id/fc_om_signon_password_test">
+    </TextView>
+    
+    <EditText
+    	android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content" 
+    	android:inputType="textPassword"
+    	android:ellipsize ="end"
+    	android:lines="1"
+    	android:password="true"
+    	android:scrollHorizontally="true"
+    	android:selectAllOnFocus="true"
+    	android:textColor="@color/Black"
+    	android:background="@drawable/fc_om_edit_field_bg"
+    	android:id="@+id/fc_om_signon_password_edit">
+    </EditText>
+    
+</TableRow>
+<TableRow>
+		
+		<TextView
+		android:layout_height="30dp"
+		 />
+		<TextView
+		android:layout_width="wrap_content" 
+    	android:layout_height="fill_parent"
+    	android:textColor="@color/Red"
+    	android:gravity="top"
+    	android:id="@+id/fc_om_signon_password_error">
+		</TextView>
+		
+		
+	</TableRow>
+	
+
+  <TableRow>
+		<TextView
+		android:layout_height="20dp"
+		 />
+		<TextView />
+		<TextView
+		android:layout_height="20dp"
+		 />
+		<TextView />
+	</TableRow>
+ </TableLayout>
+	
+            </LinearLayout>
+</LinearLayout>
+<Button 
+			android:layout_width="100dp" 
+            android:layout_height="wrap_content"
+            android:id="@+id/fc_om_signon_button"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:onClick="AttemptSignon"
+            android:text="@+string/fc_om_signin" />
+</LinearLayout>
+
+</ScrollView>

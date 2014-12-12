@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/fc_credit_card_scroller"
+android:fillViewport="true"
+
+android:layout_width="fill_parent"
+android:layout_height="fill_parent">
+
+<LinearLayout 
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/fc_background"
+    >
+    <include layout="@layout/fc_header_horiz"/>
+ <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/fc_list_wrapper"
+    >
+    
+     <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/fc_list_bg"
+    >
+
+  	<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:textSize="12dip"
+    android:id="@+id/fc_credit_card_cards_accepted"
+    android:drawableRight="@+drawable/fc_credit_card_images"
+  	android:drawablePadding="2dp"
+  	android:layout_marginTop="20dp"
+  	android_gravity="center_vertical"
+  	android:textColor="@color/Black"
+  	android:text="@string/fc_credit_cards_accepted"
+  	android:layout_centerVertical="true" android:gravity="center_vertical">
+  	
+  	</TextView>
+  	
+  	<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:textSize="20dip"
+    android:id="@+id/fc_credit_card_enter_number_label"
+  	android:drawablePadding="4dp"
+  	android:textColor="@color/Black"
+  	android:layout_marginTop="20dp"
+  	android:layout_marginLeft="10dp"
+  	android:text="@string/fc_credit_card_enter_number"
+  	>
+  	
+  	</TextView>
+  	
+  	   <EditText
+    	android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content" 
+    	android:lines="1"
+    	android:scrollHorizontally="true"
+    	android:selectAllOnFocus="true"
+    	android:textColor="@color/Black"
+    	android:layout_marginLeft="10dp"
+    	android:layout_marginRight="10dp"
+		android:digits=" -0123456789"
+		android:inputType="number"
+    	android:background="@drawable/fc_edit_box_bg_drawable"
+    	android:id="@+id/fc_credit_card_card_number">
+    </EditText>
+    
+ 
+  
+  <TextView  
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+    android:textSize="20dip"
+    android:layout_marginTop="20dp"
+    android:id="@+id/fc_credit_card_exp_label"
+  	android:textColor="@color/Black"
+  	android:text="@string/fc_credit_card_exp"
+  	>
+  	</TextView>
+  	
+  <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    
+    >
+  	<TextView  
+    android:layout_width="125dp" 
+    android:layout_height="wrap_content"
+    android:textSize="20dip"
+    android:layout_marginLeft="25dp"
+    android:id="@+id/fc_credit_card_exp_month_label"
+  	android:textColor="@color/Black"
+  	android:text="@string/fc_credit_card_exp_month_label"
+  	>
+  	</TextView>
+  	
+  	
+  	  <EditText
+    	android:layout_width="48sp" 
+    	android:layout_height="wrap_content" 
+    	android:lines="1"
+    	android:textSize="20sp"
+    	android:scrollHorizontally="false"
+    	android:selectAllOnFocus="true"
+    	android:textColor="@color/Black"
+    	android:inputType="number"
+    	android:layout_marginLeft="5dp"
+    	android:background="@drawable/fc_edit_box_bg_drawable"
+    	android:id="@+id/fc_credit_card_exp_month">
+    </EditText>
+  	</LinearLayout>
+  	
+  <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    
+    >
+  	  	<TextView  
+    android:layout_width="125dp" 
+    android:layout_height="wrap_content"
+    android:textSize="20dip"
+    android:id="@+id/fc_credit_card_exp_year_label"
+  	android:drawablePadding="4dp"
+  	android:textColor="@color/Black"
+  	android:layout_marginLeft="25dp"
+  	android:text="@string/fc_credit_card_exp_year_label"
+  	>
+  	</TextView>
+  	
+  	
+  	<EditText
+    	android:layout_width="72sp" 
+    	android:layout_height="wrap_content" 
+    	android:lines="1"
+    	android:textSize="20dp"
+    	android:scrollHorizontally="false"
+    	android:selectAllOnFocus="true"
+    	android:textColor="@color/Black"
+    	android:inputType="number"
+    	android:layout_marginLeft="5dp"
+    	android:background="@drawable/fc_edit_box_bg_drawable"
+    	android:id="@+id/fc_credit_card_exp_year">
+    </EditText>
+  	</LinearLayout>
+  	
+  <LinearLayout
+  android:orientation="horizontal"
+  android:layout_width="wrap_content"
+  android:layout_marginTop="10dp"
+  android:id="@+id/fc_credit_card_zip_lay"
+  android:layout_below="@+id/fc_credit_card_exp_lay"
+  android:layout_marginLeft="10dp"
+  android:layout_height="wrap_content">
+ 	
+  	<TextView  
+    android:layout_width="135dp" 
+    android:layout_height="wrap_content"
+    android:textSize="20dip"
+    android:id="@+id/fc_credit_card_zip_label"
+  	android:textColor="@color/Black"
+  	android:text="@string/fc_credit_card_zip_label"
+  	>
+  	</TextView>
+  	
+  	
+  	  <EditText
+    	android:layout_width="92sp" 
+    	android:layout_height="wrap_content" 
+    	android:lines="1"
+    	android:textSize="20sp"
+    	android:scrollHorizontally="false"
+    	android:selectAllOnFocus="true"
+    	android:textColor="@color/Black"
+    	android:inputType="number"
+    	android:layout_marginLeft="10dp"
+    	android:background="@drawable/fc_edit_box_bg_drawable"
+    	android:id="@+id/fc_credit_card_zip">
+    </EditText>
+  	
+  	</LinearLayout>
+  	
+  	<LinearLayout
+	android:orientation="horizontal"
+	android:layout_marginTop="20dp"
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    
+    android:layout_alignParentBottom="true">
+
+	<Button 
+			android:layout_weight="0.5" 
+			android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:id="@+id/fc_drink_add_edit_cancel"
+            android:onClick="UserCanceled"
+            android:text="@string/cancel" />
+   
+	<Button 
+			android:layout_weight="0.5"
+			android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fc_drink_add_edit_doit"
+            android:onClick="DoUpdateCard"
+            android:text="@string/fc_update"
+             />
+   
+
+</LinearLayout>
+  	
+</LinearLayout>
+</LinearLayout>
+</LinearLayout>  	
+</ScrollView>

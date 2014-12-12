@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal"
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android_gravity="center"
+    >
+
+<Button 
+			android:layout_weight="0.5" 
+			android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:id="@+id/fc_food_add_edit_options_cancel"
+            android:onClick="UserCanceled"
+            android:layout_gravity="bottom"
+            android:text="@string/cancel" />
+   
+<Button 
+			android:layout_weight="0.5"
+			android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fc_food_add_edit_options_doit"
+            android:onClick="DoAction"
+            android:layout_gravity="bottom"
+             />
+   
+
+</LinearLayout>

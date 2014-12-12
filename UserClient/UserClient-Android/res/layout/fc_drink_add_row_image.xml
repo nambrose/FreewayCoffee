@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:id="@+id/lineItem"
+				xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center_vertical">
+ 
+				<ImageView
+				android:layout_width="44dip"
+				android:layout_height="44dip"
+				android:layout_marginLeft="10dip" 
+				android:id="@+id/fc_drink_add_row_img"
+				android:layout_centerVertical="true"
+				android:layout_alignParentLeft="true" />
+ 
+
+				<TextView android:id="@+id/fc_drink_add_row_text"
+						  android:layout_height="wrap_content"
+						  android:layout_marginLeft="10dip"
+						  android:textSize="24sp"
+						  android:textColor="#ff000000" android:layout_width="wrap_content"
+						  android:layout_toRightOf="@+id/fc_drink_add_row_img"
+				></TextView>
+				<TextView android:id="@+id/fc_drink_add_row_small_text"
+						  android:layout_height="wrap_content"
+						  android:layout_marginLeft="10dip" 
+						  android:textSize="10sp"
+						  android:textColor="@color/Blue" android:layout_width="wrap_content"
+						  android:layout_toRightOf="@+id/fc_drink_add_row_img"
+						  android:layout_below="@+id/fc_drink_add_row_text"
+						  
+				></TextView>
+ 
+ 
+</RelativeLayout>

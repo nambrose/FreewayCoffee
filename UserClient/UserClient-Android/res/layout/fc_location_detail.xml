@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/c_order_response_scroller"
+android:fillViewport="true"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent">
+
+<LinearLayout
+  android:orientation="vertical"
+  android:background="@drawable/fc_background"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+    
+    <include layout="@layout/fc_header_horiz"/>
+   
+    <LinearLayout
+  android:orientation="vertical"
+  android:background="@drawable/fc_list_wrapper"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+  
+	<LinearLayout
+  android:orientation="vertical"
+  android:background="@drawable/fc_list_bg"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+  
+	<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    android:textSize="16dip"
+    android:id="@+id/fc_location_detail_text"
+  	android:drawablePadding="4dp"
+  	android:textColor="@color/Black"
+  	
+	/>
+	
+
+<LinearLayout 
+	android:orientation="horizontal"
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+<Button 
+			android:layout_weight="0.5" 
+			android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:id="@+id/fc_location_detail_back"
+            android:onClick="DoBack"
+            android:text="@string/fc_back" 
+             />
+<Button 
+			android:layout_weight="0.5"
+			android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fc_location_detail_map_button"
+            android:onClick="DoShowMap"
+            android:text="@string/fc_map"
+            
+             />
+  
+  </LinearLayout>
+
+</LinearLayout>
+</LinearLayout>
+</LinearLayout>
+</ScrollView>

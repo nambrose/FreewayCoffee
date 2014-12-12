@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+
+    <LinearLayout
+  android:orientation="horizontal"
+  android:layout_width="fill_parent"
+  android:background="@color/Black"
+  android:layout_height="wrap_content">
+  
+        
+        
+        <TextView 
+            android:id="@+id/fc_om_main_time_date"
+    	android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content"
+    	android:layout_marginTop="5dp"
+    	android:layout_marginLeft="5dp"
+    	android:layout_marginRight="5dp"
+    	android:layout_marginBottom="5dp" 
+    	
+    	android:ellipsize ="none"
+    	android:layout_gravity="right"
+    	android:gravity="center_vertical"
+    	android:textColor="@color/White"
+    	>
+    	</TextView>
+    	
+  </LinearLayout>
+<LinearLayout
+  android:orientation="horizontal"
+  android:layout_width="fill_parent"
+  android:background="@color/Black"
+  android:layout_height="fill_parent">
+  
+    <LinearLayout
+  android:orientation="vertical"
+  android:layout_width="850dp"
+  android:layout_marginLeft="5dp"
+  android:layout_marginRight="10dp"
+  android:layout_height="fill_parent"
+  android:background="@drawable/fc_om_list_wrapper"
+  android:id="@+id/fc_om_main_incoming_orders_vert">
+  
+        <LinearLayout
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:background="@drawable/fc_om_list_bg"
+  android:layout_height="fill_parent">
+  <CheckBox android:id="@+id/fc_om_main_hide_completed_orders_check"
+            android:layout_width="wrap_content" 
+            android:layout_height="20dp"
+            android:textColor="@color/Black"
+            android:textSize="10dip"
+            android:layout_gravity="left"
+            android:layout_marginLeft="5dp"
+    		android:layout_marginTop="3dp"
+    		android:button="@drawable/fc_om_check_box"
+            android:text="Hide Completed Orders"
+         /> 
+         
+        <TextView 
+    	android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content"
+    	android:layout_marginTop="5dp"
+    	android:layout_marginLeft="5dp"
+    	android:layout_marginRight="5dp"
+    	android:layout_marginBottom="5dp" 
+    	android:text="Incoming Orders"
+    	android:ellipsize ="none"
+    	android:gravity="center"
+    	android:textColor="@color/White"
+    	android:background="@drawable/fc_om_user_banner_rounded">
+    	</TextView>
+        
+        <ExpandableListView
+            android:layout_width="fill_parent" android:layout_height="fill_parent"
+            android:childDivider="#00000000" android:cacheColorHint="#00000000"
+            android:id="@+id/fc_om_order_main_list" android:groupIndicator="@null">
+		</ExpandableListView>
+
+	</LinearLayout>
+	</LinearLayout>
+	    
+     <LinearLayout
+  android:orientation="vertical"
+  android:layout_width="400dp"
+  android:layout_height="fill_parent"
+  android:layout_marginRight="5dp"
+  android:background="@drawable/fc_om_list_wrapper"
+  android:id="@+id/fc_om_main_arriving_customers_vert">
+  
+            <LinearLayout
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:background="@drawable/fc_om_list_bg"
+  android:layout_height="fill_parent">
+  
+        <TextView 
+    	android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content"
+    	android:layout_marginLeft="5dp"
+    	android:layout_marginRight="5dp" 
+    	android:layout_marginTop="28dp"
+    	android:layout_marginBottom="5dp" 
+    	android:text="Arriving Customers"
+    	android:ellipsize ="none"
+    	android:gravity="center"
+    	android:textColor="@color/White"
+    	android:background="@drawable/fc_om_user_banner_rounded">
+    	</TextView>
+    	<ListView
+            android:layout_width="fill_parent" android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:id="@+id/fc_om_order_arriving_list" >
+		</ListView>
+    	</LinearLayout>
+    	
+  	
+    
+    </LinearLayout>
+    </LinearLayout>
+
+ </LinearLayout>

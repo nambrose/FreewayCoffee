@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView 
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/fc_signin_scroller"
+android:fillViewport="true"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent">
+
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+   
+
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="300dp"
+  android:layout_height="wrap_content">
+	
+	<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:textSize="16dip"
+    android:id="@+id/fc_feedback_text"
+  	android:textColor="@color/Black"
+  	android:background="@drawable/fc_list_bg"
+  	android:text="@string/fc_comments"
+  	
+	/>
+	
+   <EditText
+   	android:layout_width="fill_parent" 
+   	android:layout_height="wrap_content"
+   	android:lines="4"
+   	android:inputType="textMultiLine"
+   	android:textSize="16sp"
+   	android:scrollHorizontally="true"
+   	android:selectAllOnFocus="false"
+   	android:textColor="@color/Black"
+   	android:background="@drawable/fc_edit_box_bg_drawable"
+   	android:gravity="top"
+   	android:layout_marginRight="10dp"
+   	android:id="@+id/fc_feedback_edit">
+   	
+   	</EditText>
+    	
+    
+    <TextView  
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+    android:textSize="16dip"
+    android:id="@+id/fc_feedback_email_label"
+  	android:ellipsize="end"
+  	android:textColor="@color/Black"
+  	
+  	android:text="@string/fc_your_email_address"
+  	android:layout_gravity="top"
+  	android:layout_marginTop="10dp"
+  	android:layout_marginBottom="5dp"
+  	
+	/>
+	
+   <EditText
+   	android:layout_width="fill_parent" 
+   	android:layout_height="wrap_content"
+   	android:lines="1"
+   	android:inputType="textEmailAddress"
+   	android:scrollHorizontally="true"
+   	android:selectAllOnFocus="false"
+   	android:textColor="@color/Black"
+   	android:background="@drawable/fc_edit_box_bg_drawable"
+   	android:layout_marginRight="10dp"
+   	android:layout_marginBottom="10dp"
+   	android:id="@+id/fc_feedback_email_edit">
+   	</EditText>
+   	
+    
+	
+   <LinearLayout 
+	android:orientation="horizontal"
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/fc_feedback_buttons"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/fc_list_bg"
+    >
+<Button 
+			android:layout_weight="0.5" 
+			android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:id="@+id/fc_about_back"
+            android:onClick="DoCancel"
+            android:text="@string/fc_cancel" 
+            
+             />
+
+
+<Button 
+			android:layout_weight="0.5"
+			android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fc_about_website_button"
+            android:onClick="DoSendFeedback"
+            android:text="@string/fc_send_feedback"
+            
+             />
+  
+  </LinearLayout>
+  </LinearLayout>
+   
+    
+</LinearLayout>
+
+</ScrollView>

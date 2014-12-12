@@ -1,0 +1,120 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXFileReference section */
+		010807CE144A4A97009CA89E /* fc_credit_card.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = fc_credit_card.php; sourceTree = "<group>"; };
+		010E935614266C050073CB27 /* fc_signon.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = fc_signon.php; sourceTree = "<group>"; };
+		010E935714285D9F0073CB27 /* fc_user.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = fc_user.php; sourceTree = "<group>"; };
+		010E935814285FA30073CB27 /* fc_user_logic.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = fc_user_logic.php; sourceTree = "<group>"; };
+		010E9359142862B90073CB27 /* fc_debug_commands.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = fc_debug_commands.txt; sourceTree = "<group>"; };
+		010E935A142996620073CB27 /* fc_food.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = fc_food.php; sourceTree = "<group>"; };
+		010E935C1429B7F30073CB27 /* fc_user_drink.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = fc_user_drink.php; sourceTree = "<group>"; };
+		01804EC9145DEC9300F7F714 /* fc_pdf_helper.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = fc_pdf_helper.php; sourceTree = "<group>"; };
+		0181FD5A146F9276003E3F87 /* auth_net.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = auth_net.php; sourceTree = "<group>"; };
+		019E29CC1440D48D00736F12 /* fc_drink_add_edit.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = fc_drink_add_edit.php; sourceTree = "<group>"; };
+		019E29CE1446C33100736F12 /* fc_db_fc.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = fc_db_fc.php; sourceTree = "<group>"; };
+		01A5444F144BA61500504330 /* fc_db_nickambrose.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = fc_db_nickambrose.php; sourceTree = "<group>"; };
+		01C869E8142E84D300E6F30C /* fc_drink_pick.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = fc_drink_pick.php; sourceTree = "<group>"; };
+		01C869E9142E857500E6F30C /* fc_drink_pick_logic.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = fc_drink_pick_logic.php; sourceTree = "<group>"; };
+		01DB713F142072DB0068E9E1 /* fc_session.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = fc_session.php; sourceTree = "<group>"; };
+		01DB714B142073380068E9E1 /* fc_constants.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = fc_constants.php; sourceTree = "<group>"; };
+		01DB717A142142390068E9E1 /* fc_database_connection.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = fc_database_connection.php; sourceTree = "<group>"; };
+		01DB717B142142390068E9E1 /* fc_user_auth_db.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = fc_user_auth_db.php; sourceTree = "<group>"; };
+		01DB71DF14214A530068E9E1 /* fc_signup.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = fc_signup.php; sourceTree = "<group>"; };
+		01DB71EC14214B420068E9E1 /* fc_xml_helper.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = fc_xml_helper.php; sourceTree = "<group>"; };
+		01DEF5F51458928D00B07B36 /* fc_orders.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = fc_orders.php; sourceTree = "<group>"; };
+		01E4AF6214A511C100B1F262 /* fc_make_model_color_logic.php */ = {isa = PBXFileReference; path = fc_make_model_color_logic.php; sourceTree = "<group>"; };
+		01E4AF6314A54AFA00B1F262 /* fc_make_model_color.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = fc_make_model_color.php; sourceTree = "<group>"; };
+		01FFCAB81423EA3100AF3431 /* fc_mailer.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = fc_mailer.php; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		01DB712E14205AED0068E9E1 = {
+			isa = PBXGroup;
+			children = (
+				01E4AF6214A511C100B1F262 /* fc_make_model_color_logic.php */,
+				01804EC9145DEC9300F7F714 /* fc_pdf_helper.php */,
+				01DEF5F51458928D00B07B36 /* fc_orders.php */,
+				010E935C1429B7F30073CB27 /* fc_user_drink.php */,
+				01C869E8142E84D300E6F30C /* fc_drink_pick.php */,
+				01C869E9142E857500E6F30C /* fc_drink_pick_logic.php */,
+				01FFCAB81423EA3100AF3431 /* fc_mailer.php */,
+				01DB71EC14214B420068E9E1 /* fc_xml_helper.php */,
+				0181FD5A146F9276003E3F87 /* auth_net.php */,
+				010E935714285D9F0073CB27 /* fc_user.php */,
+				010E935814285FA30073CB27 /* fc_user_logic.php */,
+				01E4AF6314A54AFA00B1F262 /* fc_make_model_color.php */,
+				010E9359142862B90073CB27 /* fc_debug_commands.txt */,
+				010807CE144A4A97009CA89E /* fc_credit_card.php */,
+				019E29CC1440D48D00736F12 /* fc_drink_add_edit.php */,
+				010E935614266C050073CB27 /* fc_signon.php */,
+				01DB71DF14214A530068E9E1 /* fc_signup.php */,
+				01DB717A142142390068E9E1 /* fc_database_connection.php */,
+				010E935A142996620073CB27 /* fc_food.php */,
+				01DB717B142142390068E9E1 /* fc_user_auth_db.php */,
+				01DB713F142072DB0068E9E1 /* fc_session.php */,
+				01DB714B142073380068E9E1 /* fc_constants.php */,
+				019E29CE1446C33100736F12 /* fc_db_fc.php */,
+				01A5444F144BA61500504330 /* fc_db_nickambrose.php */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		01DB713014205AED0068E9E1 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 01DB713314205AED0068E9E1 /* Build configuration list for PBXProject "FCWebServer" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 01DB712E14205AED0068E9E1;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		01DB713114205AED0068E9E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		01DB713214205AED0068E9E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01DB713314205AED0068E9E1 /* Build configuration list for PBXProject "FCWebServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01DB713114205AED0068E9E1 /* Debug */,
+				01DB713214205AED0068E9E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 01DB713014205AED0068E9E1 /* Project object */;
+}

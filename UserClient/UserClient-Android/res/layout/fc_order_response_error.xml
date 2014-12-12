@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+   <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/fc_list_wrapper"
+    >
+    
+        <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/fc_list_bg"
+    >
+   
+	
+	<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:textSize="16dip"
+    android:id="@+id/fc_order_response_text"
+  	android:drawablePadding="4dp"
+  	android:textColor="@color/Black"
+  	
+	/>
+	
+	<LinearLayout 
+	android:orientation="horizontal"
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/fc_order_response_buttons"
+    
+    >
+<Button 
+			android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:id="@+id/fc_order_response_error_back"
+            android:onClick="DoBack"
+            android:text="@string/fc_back" 
+             />
+  
+  </LinearLayout>
+	
+</LinearLayout>
+</LinearLayout>

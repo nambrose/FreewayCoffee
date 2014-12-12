@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+   
+  <ScrollView 
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/fc_about_scroller"
+android:layout_weight="1"
+android:layout_width="fill_parent"
+android:layout_height="0dip"
+>
+
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="300dp"
+  android:layout_height="fill_parent">
+  
+
+	<RadioGroup android:id="@+id/fc_feedback_happy_group"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+            >
+
+        <ToggleButton android:id="@+id/fc_feedback_happy_terrible_1"
+                      android:layout_height="wrap_content"
+                      android:layout_width="wrap_content"
+                      android:layout_weight="1"
+                      android:textOn=""
+                      android:textOff=""
+                      android:onClick="onToggle"
+                      
+                      android:background="@drawable/fc_draw_feed_terrible"
+                      
+                />
+                <ToggleButton android:id="@+id/fc_feedback_happy_terrible_2"
+                      android:layout_height="wrap_content"
+                      android:layout_width="wrap_content"
+                      android:layout_weight="1"
+                      android:textOn=""
+                      android:onClick="onToggle"
+                      
+                      android:textOff=""
+                      
+                      android:background="@drawable/fc_draw_feed_bad"
+                      
+                />
+                <ToggleButton android:id="@+id/fc_feedback_happy_terrible_3"
+                      android:layout_height="wrap_content"
+                      android:layout_width="wrap_content"
+                      android:layout_weight="1"
+                      android:textOn=""
+                      android:textOff=""
+                      android:onClick="onToggle"
+                      
+                      android:background="@drawable/fc_draw_feed_good"
+                      
+                />
+                <ToggleButton android:id="@+id/fc_feedback_happy_terrible_4"
+                      android:layout_height="wrap_content"
+                      android:layout_width="wrap_content"
+                      android:layout_weight="1"
+                      android:textOn=""
+                      android:onClick="onToggle"
+                      
+                      android:textOff=""
+                      
+                      android:background="@drawable/fc_draw_feed_excellent"
+                      
+                />
+	
+	</RadioGroup>
+	
+	<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:textSize="16dip"
+    android:id="@+id/fc_feedback_text"
+  	android:layout_marginTop="15dp"
+  	android:textColor="@color/Black"
+  	android:background="@color/White"
+  	android:text="@string/fc_comments"
+  	
+	/>
+	
+   <EditText
+   	android:layout_width="fill_parent" 
+   	android:layout_height="wrap_content"
+   	android:lines="4"
+   	android:scrollHorizontally="true"
+   	android:selectAllOnFocus="false"
+   	android:textColor="@color/Black"
+   	android:background="@drawable/fc_edit_box_bg_drawable"
+   	android:gravity="top"
+   	android:layout_marginRight="10dp"
+   	android:id="@+id/fc_feedback_edit">
+   	
+   	</EditText>
+    	
+    
+    <TextView  
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+    android:textSize="16dip"
+    android:id="@+id/fc_feedback_email_label"
+  	android:ellipsize="end"
+  	android:textColor="@color/Black"
+  	android:background="@color/White"
+  	android:text="@string/fc_your_email_address"
+  	android:layout_gravity="top"
+  	android:layout_marginTop="10dp"
+  	android:layout_marginBottom="5dp"
+  	
+	/>
+	
+   <EditText
+   	android:layout_width="fill_parent" 
+   	android:layout_height="wrap_content"
+   	android:lines="1"
+   	android:scrollHorizontally="true"
+   	android:selectAllOnFocus="false"
+   	android:textColor="@color/Black"
+   	android:background="@drawable/fc_edit_box_bg_drawable"
+   	android:layout_marginRight="10dp"
+   	android:layout_marginBottom="10dp"
+   	android:id="@+id/fc_feedback_email_edit">
+   	</EditText>
+   	
+    
+	
+   <LinearLayout 
+	android:orientation="horizontal"
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/fc_feedback_buttons"
+    android:layout_marginRight="10dp"
+    android:background="#FFFFFF"
+    >
+<Button 
+			android:layout_weight="0.5" 
+			android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:id="@+id/fc_about_back"
+            android:onClick="DoCancel"
+            android:text="@string/fc_cancel" 
+            
+             />
+
+
+<Button 
+			android:layout_weight="0.5"
+			android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fc_about_website_button"
+            android:onClick="DoSendFeedback"
+            android:text="@string/fc_send_feedback"
+            
+             />
+  
+  </LinearLayout>
+  </LinearLayout>
+   </ScrollView>
+    
+</LinearLayout>
+
